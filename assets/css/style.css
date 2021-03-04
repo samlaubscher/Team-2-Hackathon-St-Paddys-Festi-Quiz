@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(98, 204, 28);
+
+}
+
+.hidden {
+    display: none;
+}
