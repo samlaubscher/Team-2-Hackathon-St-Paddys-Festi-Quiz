@@ -1,14 +1,8 @@
-.question {
-    width: 100%;
-    height: 100%;
-}
-
-.hidden {
-    display: none;
-}
-
 .answer {
-    width: 100%;
     text-align: center;
     cursor: pointer;
+}
+
+.carousel-item {
+    height: 300px;
 }
