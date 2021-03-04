@@ -7,3 +7,7 @@ body {
     background-color: rgb(98, 204, 28);
 
 }
+
+.hidden {
+    display: none;
+}
