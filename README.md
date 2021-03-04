@@ -13,3 +13,7 @@
 ##### Sam Green
 ##### Sam Laubscher
 ##### Yuriy Kovalchuk
+
+### Wireframes
+
+Wireframes for the project can be found [here](assets/wireframes/wireframes.pdf)
