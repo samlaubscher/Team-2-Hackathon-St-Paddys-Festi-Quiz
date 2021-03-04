@@ -49,7 +49,7 @@
                     <div class="col-12 col-md-4 offset-md-4 text-center my-5 bg-light"> <!-- This will be centered and visible for first time visitors, then hidden when name is entered and main-landing-content will be visible -->
                         <form class="p-4" action="">
                             <p>Your Name:</p>
-                            <input type="text">
+                            <input id="name-input" type="text">
                             <button id="enter-name-btn">Enter!</button>
                         </form>
                     </div>
@@ -58,7 +58,12 @@
 
             <div id="main-landing-container" class="hidden"> <!-- this will be hidden in place of enter-name-container if username not in session, user enters name, then this is shown to allow them to play -->
                 <div class="row">
-                    <div class="col-12 text-center my-5">
+                    <div class="col-12 text-center mt-4">
+                        <h2>Are you ready <strong><span id="name"></span></strong>?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mb-5 mt-2">
                         <a class="btn btn-success rounded-pill px-4" href="#">Play Game</a>
                     </div>
                 </div>
