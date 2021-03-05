@@ -36,7 +36,6 @@ function validateAnswer(answer, questionNumber, callBack){
     if (score == null){
         score = 0
         sessionStorage.setItem("score", 0)
-        console.log(typeof(score))
     }
 
     if(answer == "true"){
