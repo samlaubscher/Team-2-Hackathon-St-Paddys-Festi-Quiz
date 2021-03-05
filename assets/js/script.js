@@ -24,13 +24,14 @@ function nextQuestion(number){
     }
     let remainingAnswers = $(`#${currentQuestionId}`).children(".answer")
     for (i = 0; i < remainingAnswers.length; i++) {
-    remainingAnswers[i].removeEventListener("click", onClick)
+    remainingAnswers[i].removeEventListener("click", onClick);
+    remainingAnswers[i].classList.add("disabled");
     }
 
 }
 
 // Validations the answers
-function validateAnswer(answer, questionNumber, callBack){
+function validateAnswer(element, callBack){
     let score = sessionStorage.getItem("score")
 
     if (score == null){
@@ -38,13 +39,20 @@ function validateAnswer(answer, questionNumber, callBack){
         sessionStorage.setItem("score", 0)
     }
 
+    let answer = element.getAttribute("data-answer")
+    let questionId = element.parentElement.id
+    let questionNumber = questionId.slice(1)
+
     if(answer == "true"){
         score = +score + 1
         sessionStorage.setItem("score", score)
         console.log(sessionStorage.getItem("score"))
-        //code to add class class
+        element.classList.add("correct")
+        element.innerHTML += " <i class='fas fa-check-circle'></i>"
     } else {
-        //code to add class wrong
+        element.classList.add("incorrect")
+        element.innerHTML += " <i class='fas fa-times-circle'></i>"
+        $(`#${questionId}`).children("[data-answer=true]").addClass("correct").append(" <i class='fas fa-check-circle'></i>")
     };
 
     if(callBack) callBack(questionNumber)
@@ -52,10 +60,8 @@ function validateAnswer(answer, questionNumber, callBack){
 
 // Passes the answers to the validate answer function
 function onClick(event){
-    let answer = event.target.getAttribute("data-answer")
-    let questionId = event.target.parentElement.id
-    let questionNumber = questionId.slice(1)
-    validateAnswer(answer, questionNumber, nextQuestion)
+    let element = event.target
+    validateAnswer(element, nextQuestion)
 }
 
 // Adds the onclick events
