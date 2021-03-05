@@ -30,6 +30,11 @@ body {
 .footer-details p{
     margin: auto;
     text-align: center;
+    text-decoration: none;
+}
+
+.footer-details p a{
+    text-decoration: none;
 }
 
 .footer-details .small-logo{ 
@@ -55,6 +60,11 @@ body {
 
 .footer-details a:hover {
     color: #008000;
+}
+.footer-details p a:hover {
+    background: #ffa500;
+    color: #ffffff;
+    font-weight: bolder;
 }
 
 /********************************* NAVBAR *********************************/
