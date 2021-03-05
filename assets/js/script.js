@@ -71,3 +71,4 @@ $(document).ready(function() {
     answers[i].addEventListener("click", onClick)
     }
 });
+
