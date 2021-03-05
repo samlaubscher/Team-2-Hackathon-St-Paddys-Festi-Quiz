@@ -58,9 +58,25 @@ body {
 }
 
 /********************************* NAVBAR *********************************/
-.navbar-brand {
-    text-align: center;
+.logo {
+    border-radius: 50%;
 }
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 375px) {
+.navbar-brand {
+    font-size: 1.6rem;
+    }
+.logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+}
+
 @media (min-width: 768px) {
 .navbar-expand-lg .navbar-nav {
     display: flex;
