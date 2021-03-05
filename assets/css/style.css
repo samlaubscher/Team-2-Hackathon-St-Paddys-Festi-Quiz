@@ -20,6 +20,7 @@ body {
     padding: 1.25rem;
     text-align: center;
     vertical-align:middle;
+    
 }
 
 .footer-details .info{
@@ -31,6 +32,11 @@ body {
     margin: auto;
     text-align: center;
     text-decoration: none;
+    
+}
+
+.footer-details .info p{
+    text-shadow:  1px 1px #ffa500;
 }
 
 .footer-details p a{
@@ -41,6 +47,7 @@ body {
      background-color: #ffffff;
      color: #008000;
      font-size: 1.5rem;
+     text-shadow:  2px 2px #ffa500;
 }
 
 .footer-details .small-logo i{
@@ -48,8 +55,7 @@ body {
 }
 .footer-details .social{
     background-color: #ffa500;
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;    
 }
 
 .footer-details a:link,
@@ -68,6 +74,10 @@ body {
 }
 
 /********************************* NAVBAR *********************************/
+.navbar{
+    background: #008000 ;
+}
+
 .logo {
     border-radius: 50%;
 }
@@ -76,14 +86,22 @@ body {
     font-size: 2.5rem;
     margin: 0 3rem auto;
     transition: transform .2s; /* Animation */
+    color: #ffffff;
+    text-shadow:  2px 2px #ffa500;
 }
 
 .nav-item{
     font-size: 1.2rem;
 }
 
-@media (max-width: 375px) {
+.nav-link{
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (max-width: 477px) {
     .navbar-brand {
+        margin-left: 0;
         font-size: 1.6rem;
         }
     .logo {
@@ -93,27 +111,31 @@ body {
 
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .navbar-expand-lg .navbar-nav {
     display: flex;
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 .navbar-nav {
     display: block;
     }
 }
 
 .navbar-brand:hover{
+    color: #ffa500;
+    text-shadow: 2px 2px #ffffff;
     transform: scale(1.5);
 }
 
+
 .nav-link:hover {
-    font-weight: bolder;
-    color: #008000;
     background: #ffa500;
+    color: #ffffff;
+    font-weight: bolder;
 }
+    
 
 /********************************* QUESTIONS SECTION 1*********************************/
 .carousel{
@@ -139,10 +161,13 @@ body {
 .question {
     width: 100%;
     height: 100%;
+    text-shadow: 1px 1px #ffa500;
+    
 }
 
 .question h3{
      margin-left: 1rem;
+     text-shadow: 1px 1px 2px #ffa500;
 }
 
 .nextQuestionButton{
