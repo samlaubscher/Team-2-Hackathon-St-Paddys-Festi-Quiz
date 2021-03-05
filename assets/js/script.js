@@ -11,18 +11,17 @@ function hideNamePanel() {
 /* questions scripts */ 
 
 // Moves to the next carousel slide and disables the buttons
-function nextQuestion(number){
-    let questionNumber = parseInt(number)
-    let currentQuestionId = `q${number}`
-    let nextQuestionId = `q${questionNumber + 1}`
+function nextQuestion(questionId){
+    let categoryId = questionId.split("-")[0]
+    let questionNumber = parseInt(questionId.split("-")[1])
     if (questionNumber == 4){
         // Code to move to next carousel location
     } else {
-        $(`#${currentQuestionId}`).append(`            
+        $(`#${questionId}`).append(`            
                 <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel" data-bs-slide-to="${questionNumber + 1}"
                 aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>`)
     }
-    let remainingAnswers = $(`#${currentQuestionId}`).children(".answer")
+    let remainingAnswers = $(`#${questionId}`).children(".answer")
     for (i = 0; i < remainingAnswers.length; i++) {
     remainingAnswers[i].removeEventListener("click", onClick);
     remainingAnswers[i].classList.add("disabled");
@@ -41,7 +40,6 @@ function validateAnswer(element, callBack){
 
     let answer = element.getAttribute("data-answer")
     let questionId = element.parentElement.id
-    let questionNumber = questionId.slice(1)
 
     if(answer == "true"){
         score = +score + 1
@@ -55,7 +53,7 @@ function validateAnswer(element, callBack){
         $(`#${questionId}`).children("[data-answer=true]").addClass("correct").append(" <i class='fas fa-check-circle'></i>")
     };
 
-    if(callBack) callBack(questionNumber)
+    if(callBack) callBack(questionId)
 }
 
 // Passes the answers to the validate answer function
