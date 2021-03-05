@@ -30,6 +30,11 @@ body {
 .footer-details p{
     margin: auto;
     text-align: center;
+    text-decoration: none;
+}
+
+.footer-details p a{
+    text-decoration: none;
 }
 
 .footer-details .small-logo{ 
@@ -56,6 +61,11 @@ body {
 .footer-details a:hover {
     color: #008000;
 }
+.footer-details p a:hover {
+    background: #ffa500;
+    color: #ffffff;
+    font-weight: bolder;
+}
 
 /********************************* NAVBAR *********************************/
 .logo {
@@ -63,17 +73,23 @@ body {
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin: 0 3rem auto;
+    transition: transform .2s; /* Animation */
+}
+
+.nav-item{
+    font-size: 1.2rem;
 }
 
 @media (max-width: 375px) {
-.navbar-brand {
-    font-size: 1.6rem;
+    .navbar-brand {
+        font-size: 1.6rem;
+        }
+    .logo {
+        width: 3rem;
+        height: 3rem;
     }
-.logo {
-    width: 3rem;
-    height: 3rem;
-}
 
 }
 
@@ -83,11 +99,29 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
 .navbar-nav {
     display: block;
     }
+}
+
+.navbar-brand:hover{
+    transform: scale(1.5);
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+    color: #008000;
+    background: #ffa500;
+}
+
+/********************************* QUESTIONS SECTION 1*********************************/
+.carousel{
+    margin: auto;
+    max-width: 100%;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    width: 45rem;
 }
 
 .answer {
@@ -96,7 +130,31 @@ body {
     cursor: pointer;
 }
 
+.answer:hover {
+    font-weight: bolder;
+    color: #008000;
+    background: #ffa500;
+}
+
 .question {
     width: 100%;
     height: 100%;
 }
+
+.question h3{
+     margin-left: 1rem;
+}
+
+.nextQuestionButton{
+    background-color: inherit;
+    border-color: #008000;
+    border-style: dashed;
+    color: #008000;
+    margin-left: 1rem;
+    text-align: center;
+    
+}
+.nextQuestionButton:hover{
+    background: cornsilk;
+}
+
