@@ -55,3 +55,20 @@ body {
 .footer-details a:hover {
     color: #008000;
 }
+
+/********************************* NAVBAR *********************************/
+.navbar-brand {
+    text-align: center;
+}
+@media (min-width: 768px) {
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    }
+}
+
+
+@media (max-width: 768px) {
+.navbar-nav {
+    display: block;
+    }
+}

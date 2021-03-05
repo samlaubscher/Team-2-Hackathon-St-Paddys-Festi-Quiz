@@ -18,35 +18,36 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Irish Quiz</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Leaderboard</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#">Guinn-ius</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="d-lg-flex justify-content-lg-end collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Leaderboard</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <main>
         <div class="container-fluid">
             <div id="enter-name-container">
                 <div class="row">
-                    <div class="col-12 col-md-4 offset-md-4 text-center my-5 bg-light"> <!-- This will be centered and visible for first time visitors, then hidden when name is entered and main-landing-content will be visible -->
+                    <div class="col-12 col-md-4 offset-md-4 text-center my-5 bg-light">
+                        <!-- This will be centered and visible for first time visitors, then hidden when name is entered and main-landing-content will be visible -->
                         <form class="p-4" action="">
                             <p>Your Name:</p>
                             <input id="name-input" type="text">
@@ -56,7 +57,8 @@
                 </div>
             </div>
 
-            <div id="main-landing-container" class="hidden"> <!-- this will be hidden in place of enter-name-container if username not in session, user enters name, then this is shown to allow them to play -->
+            <div id="main-landing-container" class="hidden">
+                <!-- this will be hidden in place of enter-name-container if username not in session, user enters name, then this is shown to allow them to play -->
                 <div class="row">
                     <div class="col-12 text-center mt-4">
                         <h2>Are you ready <strong><span id="name"></span></strong>?</h2>
@@ -143,9 +145,11 @@
 
     </footer>
 
-  <!-- scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js"></script>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
