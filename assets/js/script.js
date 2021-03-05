@@ -31,11 +31,23 @@ function nextQuestion(number){
 
 // Validations the answers
 function validateAnswer(answer, questionNumber, callBack){
+    let score = sessionStorage.getItem("score")
+
+    if (score == null){
+        score = 0
+        sessionStorage.setItem("score", 0)
+        console.log(typeof(score))
+    }
+
     if(answer == "true"){
-        console.log("True")
+        score = +score + 1
+        sessionStorage.setItem("score", score)
+        console.log(sessionStorage.getItem("score"))
+        //code to add class class
     } else {
-        console.log("False")
+        //code to add class wrong
     };
+
     if(callBack) callBack(questionNumber)
 }
 
