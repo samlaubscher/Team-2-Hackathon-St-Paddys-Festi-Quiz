@@ -16,11 +16,8 @@ body {
 .footer-details {
     font-weight: 600;    
     font-size: 1rem;
-    margin: auto;
-    padding: 1.25rem;
     text-align: center;
-    vertical-align:middle;
-    
+    vertical-align: middle;
 }
 
 .footer-details .info{
@@ -32,7 +29,6 @@ body {
     margin: auto;
     text-align: center;
     text-decoration: none;
-    
 }
 
 .footer-details .info p{
@@ -44,18 +40,24 @@ body {
 }
 
 .footer-details .small-logo{ 
-     background-color: #ffffff;
-     color: #008000;
-     font-size: 1.5rem;
-     text-shadow:  2px 2px #ffa500;
+    background-color: #ffffff;
+    color: #008000;
+    font-size: 1.5rem;
+    text-shadow:  2px 2px #ffa500;
 }
 
 .footer-details .small-logo i{
-     font-size: 3rem;
+    font-size: 3rem;
 }
+
 .footer-details .social{
     background-color: #ffa500;
-    font-size: 2.5rem;    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer-details a:link,
@@ -73,11 +75,16 @@ body {
     font-weight: bolder;
 }
 
+@media screen and (min-width: 768px) and (max-width: 900px){
+    .footer-details .social{
+        font-size: 2.5rem;    
+    }
+}
+
 /********************************* NAVBAR *********************************/
 .navbar{
     background: #008000 ;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .logo {
@@ -110,7 +117,6 @@ body {
         width: 3rem;
         height: 3rem;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -144,32 +150,40 @@ body {
     margin: auto;
     max-width: 100%;
     -o-object-fit: scale-down;
-       object-fit: scale-down;
-    width: 45rem;
+    object-fit: scale-down;
+    width: 50rem;
 }
 
 .answer {
-    width: 100%;
-    text-align: center;
     cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
 }
 
 .answer:hover {
-    font-weight: bolder;
-    color: #008000;
     background: #ffa500;
-}
-
-.question {
-    width: 100%;
-    height: 100%;
-    text-shadow: 1px 1px #ffa500;
+    color: #008000;
+    font-weight: bolder;
+    
     
 }
 
+.question {
+    height: 100%;
+    width: 100%;
+    text-shadow: 1px 1px #ffa500;
+}
+
 .question h3{
-     margin-left: 1rem;
-     text-shadow: 1px 1px 2px #ffa500;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #ffa500;
+    background-color: lightgreen;
+}
+
+.question hr{
+    color: green;
 }
 
 .nextQuestionButton{
@@ -179,7 +193,6 @@ body {
     color: #008000;
     margin-left: 1rem;
     text-align: center;
-    
 }
 .nextQuestionButton:hover{
     background: cornsilk;
