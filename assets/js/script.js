@@ -23,6 +23,16 @@ function nextQuestion(questionId){
                         </div>
                         `)
         $(`#${questionId} img`).fadeIn(1000)
+        setTimeout(2000)
+        if (categoryId != "d"){
+            let categoryIds = ["a", "b", "c", "d"]
+            let currentPosition = categoryIds.indexOf(categoryId)
+            let nextSectionId = categoryIds[currentPosition + 1]
+            let nextSection = $(`questionsCarousel-${nextSectionId}`)
+            $(`#questionsCarousel-${nextSectionId}`).get(0).scrollIntoView(false)
+        } else {
+            //space for results function
+        }
     } else {
         $(`#${questionId}`).append(`            
                 <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
