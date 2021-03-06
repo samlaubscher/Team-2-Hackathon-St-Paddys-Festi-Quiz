@@ -15,10 +15,27 @@ function nextQuestion(questionId){
     let categoryId = questionId.split("-")[0]
     let questionNumber = parseInt(questionId.split("-")[1])
     if (questionNumber == 4){
-        // Code to move to next carousel location
+        $(`#${questionId}`).html(`
+                        <h3 class="text-center" >Section Complete!</h3>
+                        <hr>
+                        <div class="question-image-wrapper mx-auto">
+                            <img src="assets/images/pot-of-gold.png">
+                        </div>
+                        `)
+        $(`#${questionId} img`).fadeIn(1000)
+        setTimeout(2000)
+        if (categoryId != "d"){
+            let categoryIds = ["a", "b", "c", "d"]
+            let currentPosition = categoryIds.indexOf(categoryId)
+            let nextSectionId = categoryIds[currentPosition + 1]
+            let nextSection = $(`questionsCarousel-${nextSectionId}`)
+            $(`#questionsCarousel-${nextSectionId}`).get(0).scrollIntoView(false)
+        } else {
+            //space for results function
+        }
     } else {
         $(`#${questionId}`).append(`            
-                <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel" data-bs-slide-to="${questionNumber + 1}"
+                <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
                 aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>`)
     }
     let remainingAnswers = $(`#${questionId}`).children(".answer")
