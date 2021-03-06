@@ -217,3 +217,9 @@ body {
     border-radius: 50%;
     border: 1px solid black;
 }
+
+/********************************* MODALS *********************************/
+
+.modal-body {
+    font-size: 1.5rem;
+}
