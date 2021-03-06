@@ -152,6 +152,7 @@ body {
     width: 100%;
     text-align: center;
     cursor: pointer;
+    padding: 20px;
 }
 
 .answer:hover {
@@ -195,4 +196,11 @@ body {
 }
 
 
-/********************************* WIN PAGE *********************************/
+/********************************* CAROUSEL *********************************/
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    outline: black;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid black;
+}
