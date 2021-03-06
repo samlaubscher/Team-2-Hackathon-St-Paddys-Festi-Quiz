@@ -1,7 +1,36 @@
-function getResult(score){
-    $("#exampleModal").modal()
+function getResult(){
+    $("#exampleModal").modal('show')
 }
 
+// Srolls to the next unfinished section of the quiz 
+function scrollToSection(categoryId){
+    let completedCategories = sessionStorage.getItem("completedCategories")
+
+    if (completedCategories == null){
+        completedCategories = []
+        sessionStorage.setItem("completedCategories", completedCategories)
+    } else {
+        completedCategories = completedCategories.split(",")
+    }
+
+    completedCategories.push(categoryId)
+    sessionStorage.setItem("completedCategories", completedCategories)
+
+    if (completedCategories.length == 4){
+        console.log("finished")
+        getResult()
+    } else {
+        
+        let avaliableCategories = ["a", "b", "c", "d"]
+        completedCategories.sort()
+        let difference = avaliableCategories.filter(x => !completedCategories.includes(x));
+        let nextSectionId = difference[0]
+
+        $(`#questionsCarousel-${nextSectionId}`).get(0).scrollIntoView(false)
+    }
+}
+
+// Scrolls to the next question in the quiz
 function nextQuestion(questionId){
     let categoryId = questionId.split("-")[0]
     let questionNumber = parseInt(questionId.split("-")[1])
@@ -15,15 +44,7 @@ function nextQuestion(questionId){
                         `)
         $(`#${questionId} img`).fadeIn(1000)
         setTimeout(2000)
-        if (categoryId != "d"){
-            let categoryIds = ["a", "b", "c", "d"]
-            let currentPosition = categoryIds.indexOf(categoryId)
-            let nextSectionId = categoryIds[currentPosition + 1]
-            let nextSection = $(`questionsCarousel-${nextSectionId}`)
-            $(`#questionsCarousel-${nextSectionId}`).get(0).scrollIntoView(false)
-        } else {
-            getResult(score)
-        }
+        scrollToSection(categoryId)
     } else {
         $(`#${questionId}`).append(`            
                 <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
@@ -34,7 +55,6 @@ function nextQuestion(questionId){
     remainingAnswers[i].removeEventListener("click", onClick);
     remainingAnswers[i].classList.add("disabled");
     }
-
 }
 
 // Validations the answers
