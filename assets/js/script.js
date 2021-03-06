@@ -15,7 +15,14 @@ function nextQuestion(questionId){
     let categoryId = questionId.split("-")[0]
     let questionNumber = parseInt(questionId.split("-")[1])
     if (questionNumber == 4){
-        // Code to move to next carousel location
+        $(`#${questionId}`).html(`
+                        <h3 class="text-center" >Section Complete!</h3>
+                        <hr>
+                        <div class="question-image-wrapper mx-auto">
+                            <img src="assets/images/pot-of-gold.png">
+                        </div>
+                        `)
+        $(`#${questionId} img`).fadeIn(1000)
     } else {
         $(`#${questionId}`).append(`            
                 <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"

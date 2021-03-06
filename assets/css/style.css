@@ -185,5 +185,14 @@ body {
     background: cornsilk;
 }
 
+.question-image-wrapper {
+    height: 150px;
+    width: 150px;
+}
+
+.question-image-wrapper img {
+    display: none;
+}
+
 
 /********************************* WIN PAGE *********************************/
