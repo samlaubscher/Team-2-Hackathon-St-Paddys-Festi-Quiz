@@ -1,16 +1,3 @@
-/*document.getElementById("enter-name-btn").addEventListener("click", hideNamePanel);
-
-function hideNamePanel() {
-    player = document.getElementById("name-input").value
-    sessionStorage.setItem("playername", player);
-    document.getElementById("name").innerHTML = sessionStorage.getItem("playername");
-    document.getElementById("main-landing-container").classList.toggle("hidden");
-    document.getElementById("enter-name-container").classList.toggle("hidden");
-}*/
-
-/* questions scripts */ 
-
-// Moves to the next carousel slide and disables the buttons
 function getResult(score){
     $("#exampleModal").modal()
 }
@@ -35,7 +22,7 @@ function nextQuestion(questionId){
             let nextSection = $(`questionsCarousel-${nextSectionId}`)
             $(`#questionsCarousel-${nextSectionId}`).get(0).scrollIntoView(false)
         } else {
-            //space for results function
+            getResult(score)
         }
     } else {
         $(`#${questionId}`).append(`            
@@ -90,4 +77,3 @@ $(document).ready(function() {
     answers[i].addEventListener("click", onClick)
     }
 });
-
