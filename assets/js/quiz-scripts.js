@@ -1,4 +1,5 @@
 function getResult(){
+    sessionStorage.removeItem("completedCategories");
     $("#exampleModal").modal('show')
 }
 
