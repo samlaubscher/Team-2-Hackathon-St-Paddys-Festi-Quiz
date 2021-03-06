@@ -18,7 +18,7 @@ function nextQuestion(questionId){
         // Code to move to next carousel location
     } else {
         $(`#${questionId}`).append(`            
-                <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel" data-bs-slide-to="${questionNumber + 1}"
+                <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
                 aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>`)
     }
     let remainingAnswers = $(`#${questionId}`).children(".answer")
