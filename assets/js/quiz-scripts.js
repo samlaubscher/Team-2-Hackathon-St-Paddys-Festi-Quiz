@@ -64,7 +64,7 @@ function nextQuestion(questionId){
     } else {
         $(`#${questionId}`).append(`
                 <div class="btnNextQuestion text-center">                 
-                <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
+                <button type="button" class="nextQuestionButton rounded-pill" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
                 aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>
                 </div>`)
     }
@@ -92,11 +92,11 @@ function validateAnswer(element, callBack){
         sessionStorage.setItem("score", score)
         console.log(sessionStorage.getItem("score"))
         element.classList.add("correct")
-        element.innerHTML += " <i class='fas fa-check-circle'></i>"
+        element.innerHTML += " <i class='fas fa-check-circle iconCorrect'></i>"
     } else {
         element.classList.add("incorrect")
-        element.innerHTML += " <i class='fas fa-times-circle'></i>"
-        $(`#${questionId}`).children("[data-answer=true]").addClass("correct").append(" <i class='fas fa-check-circle'></i>")
+        element.innerHTML += " <i class='fas fa-times-circle iconIncorrect'></i>"
+        $(`#${questionId}`).children("[data-answer=true]").addClass("correct").append(" <i class='fas fa-check-circle iconCorrect'></i>")
     };
 
     if(callBack) callBack(questionId)
