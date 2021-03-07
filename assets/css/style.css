@@ -11,76 +11,6 @@ body {
     display: none;
 }
 
-/********************************* FOOTER *********************************/
-
-.footer-details {
-    font-weight: 600;    
-    font-size: 1rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.footer-details .info{
-    background-color: #008000;
-    color: #ffffff;
-}
-
-.footer-details p{
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-}
-
-.footer-details .info p{
-    text-shadow:  1px 1px #ffa500;
-}
-
-.footer-details p a{
-    text-decoration: none;
-}
-
-.footer-details .small-logo{ 
-    background-color: #ffffff;
-    color: #008000;
-    font-size: 1.5rem;
-    text-shadow:  2px 2px #ffa500;
-}
-
-.footer-details .small-logo i{
-    font-size: 3rem;
-}
-
-.footer-details .social{
-    background-color: #ffa500;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 3rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.footer-details a:link,
-.footer-details a:visited,
-.footer-details a:active{
-    color: #ffffff;
-}
-
-.footer-details a:hover {
-    color: #008000;
-}
-.footer-details p a:hover {
-    background: #ffa500;
-    color: #ffffff;
-    font-weight: bolder;
-}
-
-@media screen and (min-width: 768px) and (max-width: 900px){
-    .footer-details .social{
-        font-size: 2.5rem;    
-    }
-}
-
 /********************************* NAVBAR *********************************/
 .navbar{
     background: #008000 ;
@@ -163,25 +93,25 @@ body {
 
 /********************************* QUESTIONS *********************************/
 .carousel{
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     margin: auto;
     max-width: 100%;
     -o-object-fit: scale-down;
     object-fit: scale-down;
     width: 50rem;
+    padding: 1rem;
     padding-bottom: 1rem;
 }
 
 .carousel-inner h3 {
     font-size: 1.25rem;
 }
-/* */
+
 #questionsCarousel-a {
     background-color: #008000;
 }
 
 #questionsCarousel-a h2{
-    background-color: #D6FFD6;
+    color: #ffa500;
 }
 
 #questionsCarousel-a h3
@@ -203,26 +133,13 @@ body {
     color: #008000;
     font-weight: bolder;    
 }
-/*
-#questionsCarousel-a .nextQuestionButton{
-    background-color: inherit;
-    border-color: #008000;
-    color: #ffa500;
-    margin-left: 1rem;
-    text-align: center;
-}
-
-#questionsCarousel-a .nextQuestionButton:hover{
-    background: cornsilk;
-}
-*/
 
 #questionsCarousel-c {
     background-color: #ffa500;
 }
 
 #questionsCarousel-c h2{
-    background-color: #FFF1D6;
+    color: #008000;
 }
 
 #questionsCarousel-c .answer,
@@ -237,20 +154,6 @@ body {
     color: #008000;
     font-weight: bolder;    
 }
-
-/*
-#questionsCarousel-c .nextQuestionButton{
-    background-color: inherit;
-    border-color: #ffa500;
-    color: #008000;
-    margin-left: 1rem;
-    text-align: center;
-}
-
-#questionsCarousel-c .nextQuestionButton:hover{
-    background: cornsilk;
-}
-*/
 
 .answer {
     cursor: pointer;
@@ -289,45 +192,28 @@ body {
     padding: 0;
 }
 
-/*
-.nextQuestionButton{
-    background-color: inherit;
-    border-color: #008000;
-    border-style: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: #008000;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    text-align: center;
-}
-.nextQuestionButton:hover{
-    background: cornsilk;
-}
-*/
-
 .nextQuestionButton {
-  display: inline-block;
-  padding-right: 0.6rem;
-  font-size: 1rem;
-  font-weight: bolder;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem #999;
-  margin-bottom: 1rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem #999;
+    display: inline-block;
+    padding-right: 0.6rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
 .nextQuestionButton:hover {background-color: #3e8e41}
 
 .nextQuestionButton:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
 
@@ -400,26 +286,72 @@ body {
     border-color: #ffa500;
 }
 
-/********************************* CENTERING THE nextQuestionButton *********************************/
+/********************************* FOOTER *********************************/
 
-/* If you guys considered we can uncomment this, but after styling sections
-just seems weird.
-
-#questionsCarousel-a > div {
-    padding-bottom: 40px;
+.footer-details {
+    font-weight: 600;    
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
-#questionsCarousel-b > div {
-    padding-bottom: 40px;
+.footer-details .info{
+    background-color: #008000;
+    color: #ffffff;
 }
 
-#questionsCarousel-c > div {
-    padding-bottom: 40px;
+.footer-details p{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
 }
 
-#questionsCarousel-d > div {
-    padding-bottom: 40px;
+.footer-details .info p{
+    text-shadow:  1px 1px #ffa500;
 }
 
-*/
+.footer-details p a{
+    text-decoration: none;
+}
 
+.footer-details .small-logo{ 
+    background-color: #ffffff;
+    color: #008000;
+    font-size: 1.5rem;
+    text-shadow:  2px 2px #ffa500;
+}
+
+.footer-details .small-logo i{
+    font-size: 3rem;
+}
+
+.footer-details .social{
+    background-color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-details a:link,
+.footer-details a:visited,
+.footer-details a:active{
+    color: #ffffff;
+}
+
+.footer-details a:hover {
+    color: #008000;
+}
+.footer-details p a:hover {
+    background: #ffa500;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+    .footer-details .social{
+        font-size: 2.5rem;    
+    }
+}
