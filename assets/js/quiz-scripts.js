@@ -95,7 +95,7 @@ function validateAnswer(element, callBack){
         element.innerHTML += " <i class='fas fa-check-circle iconCorrect'></i>"
     } else {
         element.classList.add("incorrect")
-        element.innerHTML += " <i class='fas fa-times-circle iconIncorrect'></i>"
+        element.innerHTML += " <i class='fas fa-times iconIncorrect'></i>"
         $(`#${questionId}`).children("[data-answer=true]").addClass("correct").append(" <i class='fas fa-check-circle iconCorrect'></i>")
     };
 
