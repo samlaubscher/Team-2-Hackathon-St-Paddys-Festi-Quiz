@@ -103,10 +103,26 @@ body {
     font-size: 1.2rem;
 }
 
-.nav-link{
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-link,
+.navbar-toggler-icon{
   color: #ffffff;
   text-align: center;
 }
+
+.navbar-toggler-icon:link,
+.navbar-toggler-icon:visited,
+.navbar-toggler-icon:active{
+    color: #ffffff;
+}
+
 
 @media screen and (max-width: 477px) {
     .navbar-brand {
@@ -147,11 +163,77 @@ body {
 
 /********************************* QUESTIONS SECTION 1*********************************/
 .carousel{
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     margin: auto;
     max-width: 100%;
     -o-object-fit: scale-down;
     object-fit: scale-down;
     width: 50rem;
+    padding-bottom: 1rem;
+}
+
+#questionsCarousel-a {
+    background-color: #008000;
+}
+
+#questionsCarousel-a h2{
+    background-color: #ffffff;
+}
+
+#questionsCarousel-a .answer{
+    color: #ffffff;
+    text-shadow: 1px 1px #ffa500;
+}
+
+#questionsCarousel-a .answer:hover {
+    background: #ffa500;
+    color: #008000;
+    font-weight: bolder;    
+}
+
+#questionsCarousel-a .nextQuestionButton{
+    background-color: inherit;
+    border-color: #008000;
+    border-style: dashed;
+    color: #ffa500;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+#questionsCarousel-a .nextQuestionButton:hover{
+    background: cornsilk;
+}
+
+#questionsCarousel-c {
+    background-color: #ffa500;
+}
+
+#questionsCarousel-c h2{
+    background-color: #ffffff;
+}
+
+#questionsCarousel-c .answer{
+    color: #ffffff;
+    text-shadow: 1px 1px #008000;
+}
+
+#questionsCarousel-c .answer:hover {
+    background: #ffffff;
+    color: #008000;
+    font-weight: bolder;    
+}
+
+#questionsCarousel-c .nextQuestionButton{
+    background-color: inherit;
+    border-color: #ffa500;
+    border-style: dashed;
+    color: #008000;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+#questionsCarousel-c .nextQuestionButton:hover{
+    background: cornsilk;
 }
 
 .answer {
@@ -175,12 +257,22 @@ body {
     text-shadow: 1px 1px #ffa500;
 }
 
-.question h3{
-    font-size: 2rem;
+.questionCarousel h2{
+    color: #008000;
     text-shadow: 1px 1px 2px #ffa500;
+<<<<<<< HEAD
+=======
+    text-decoration: underline;
+    padding: 1rem;
 }
 
-.question hr{
+.question h3{
+    background-color: lightgreen;
+    text-shadow: 1px 1px 2px #ffa500;
+>>>>>>> 8d842c2fa349a065459066a180fc969d350baf9e
+}
+
+.questionCarousel hr{
     color: green;
     padding: 0;
 }
