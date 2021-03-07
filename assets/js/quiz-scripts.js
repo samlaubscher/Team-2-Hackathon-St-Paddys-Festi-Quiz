@@ -55,12 +55,12 @@ function nextQuestion(questionId){
                         <h3 class="text-center" >Section Complete!</h3>
                         <hr>
                         <div class="question-image-wrapper mx-auto">
-                            <img class="mx-auto d-block" src="assets/images/complete-${categoryId}.png">
+                            <img class="mx-auto" src="assets/images/complete-${categoryId}.png">
                         </div>
                         `)
-        $(`#${questionId} img`).fadeIn(1000)
-        setTimeout(2000)
-        scrollToSection(categoryId)
+        $(`#${questionId} img`).fadeIn(2000)
+        setTimeout(scrollToSection, 2500, categoryId)
+        
     } else {
         $(`#${questionId}`).append(`
                 <div class="btnNextQuestion text-center">                 

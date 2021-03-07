@@ -283,6 +283,7 @@ body {
 .question-image-wrapper {
     height: 150px;
     width: 150px;
+    text-align:center
 }
 
 .question-image-wrapper img {
