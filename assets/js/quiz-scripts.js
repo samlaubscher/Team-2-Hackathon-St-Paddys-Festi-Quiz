@@ -55,7 +55,7 @@ function nextQuestion(questionId){
                         <h3 class="text-center" >Section Complete!</h3>
                         <hr>
                         <div class="question-image-wrapper mx-auto">
-                            <img src="assets/images/complete-${categoryId}.png">
+                            <img class="mx-auto d-block" src="assets/images/complete-${categoryId}.png">
                         </div>
                         `)
         $(`#${questionId} img`).fadeIn(1000)
