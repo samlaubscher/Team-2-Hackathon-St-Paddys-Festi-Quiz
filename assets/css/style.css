@@ -199,11 +199,10 @@ body {
     color: #008000;
     font-weight: bolder;    
 }
-
+/*
 #questionsCarousel-a .nextQuestionButton{
     background-color: inherit;
     border-color: #008000;
-    border-style: dashed;
     color: #ffa500;
     margin-left: 1rem;
     text-align: center;
@@ -212,9 +211,7 @@ body {
 #questionsCarousel-a .nextQuestionButton:hover{
     background: cornsilk;
 }
-
-
-/* */
+*/
 
 #questionsCarousel-c {
     background-color: #ffa500;
@@ -223,7 +220,6 @@ body {
 #questionsCarousel-c h2{
     background-color: #FFF1D6;
 }
-
 
 #questionsCarousel-c .answer,
 #questionsCarousel-c h3,
@@ -238,10 +234,10 @@ body {
     font-weight: bolder;    
 }
 
+/*
 #questionsCarousel-c .nextQuestionButton{
     background-color: inherit;
     border-color: #ffa500;
-    border-style: dashed;
     color: #008000;
     margin-left: 1rem;
     text-align: center;
@@ -250,7 +246,7 @@ body {
 #questionsCarousel-c .nextQuestionButton:hover{
     background: cornsilk;
 }
-
+*/
 
 .answer {
     cursor: pointer;
@@ -287,18 +283,48 @@ body {
     padding: 0;
 }
 
+/*
 .nextQuestionButton{
     background-color: inherit;
     border-color: #008000;
-    border-style: dashed;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #008000;
+    font-weight: bolder;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     text-align: center;
-
 }
 .nextQuestionButton:hover{
     background: cornsilk;
 }
+*/
+
+.nextQuestionButton {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem #999;
+  margin-bottom: 1rem;
+}
+
+.nextQuestionButton:hover {background-color: #3e8e41}
+
+.nextQuestionButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 
 .question-image-wrapper {
     height: 150px;
@@ -331,6 +357,17 @@ body {
     width: 50%;
 }
 
+
+.iconCorrect{
+    color: greenyellow;
+    text-shadow: 1px 1px 2px black
+}
+
+.iconIncorrect{
+    color: orangered;
+    text-shadow: 1px 1px 2px black
+   
+}
 
 /********************************* CAROUSEL *********************************/
 
