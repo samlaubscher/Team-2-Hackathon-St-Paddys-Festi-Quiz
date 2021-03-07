@@ -47,9 +47,9 @@ function nextQuestion(questionId){
         setTimeout(2000)
         scrollToSection(categoryId)
     } else {
-        $(`#${questionId}`).append(`            
+        $(`#${questionId}`).append(`<div class="btnNextQuestion text-center">            
                 <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
-                aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>`)
+                aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button></div>`)
     }
     let remainingAnswers = $(`#${questionId}`).children(".answer")
     for (i = 0; i < remainingAnswers.length; i++) {
