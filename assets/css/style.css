@@ -161,7 +161,7 @@ body {
 }
     
 
-/********************************* QUESTIONS SECTION 1*********************************/
+/********************************* QUESTIONS *********************************/
 .carousel{
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
     margin: auto;
@@ -171,16 +171,25 @@ body {
     width: 50rem;
     padding-bottom: 1rem;
 }
-
+/* */
 #questionsCarousel-a {
     background-color: #008000;
 }
 
 #questionsCarousel-a h2{
-    background-color: #ffffff;
+    background-color: #D6FFD6;
 }
 
-#questionsCarousel-a .answer{
+#questionsCarousel-a h3
+{
+    color: #ffffff;
+}
+
+#questionsCarousel-a hr{
+    color: #ffffff;
+}
+#questionsCarousel-a .answer,
+#questionsCarousel-a .questNumber{
     color: #ffffff;
     text-shadow: 1px 1px #ffa500;
 }
@@ -204,15 +213,21 @@ body {
     background: cornsilk;
 }
 
+
+/* */
+
 #questionsCarousel-c {
     background-color: #ffa500;
 }
 
 #questionsCarousel-c h2{
-    background-color: #ffffff;
+    background-color: #FFF1D6;
 }
 
-#questionsCarousel-c .answer{
+
+#questionsCarousel-c .answer,
+#questionsCarousel-c h3,
+#questionsCarousel-c .questNumber{
     color: #ffffff;
     text-shadow: 1px 1px #008000;
 }
@@ -235,6 +250,7 @@ body {
 #questionsCarousel-c .nextQuestionButton:hover{
     background: cornsilk;
 }
+
 
 .answer {
     cursor: pointer;
@@ -260,6 +276,10 @@ body {
 .questionCarousel h2{
     color: #008000;
     text-shadow: 1px 1px 2px #ffa500;
+}
+
+.carousel h3 span{
+    text-align: right;
 }
 
 .questionCarousel hr{
