@@ -345,23 +345,24 @@ body {
 
 /********************************* CENTERING THE nextQuestionButton *********************************/
 
-
+/* If you guys considered we can uncomment this, but after styling sections
+just seems weird.
 
 #questionsCarousel-a > div {
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
 #questionsCarousel-b > div {
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
 #questionsCarousel-c > div {
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
 #questionsCarousel-d > div {
-    padding: 40px;
+    padding-bottom: 40px;
 }
 
-
+*/
 
