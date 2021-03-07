@@ -64,19 +64,11 @@ function nextQuestion(questionId){
                 }, 1000);
         
     } else {
-<<<<<<< HEAD
-        $(`#${questionId}`).append(`
-                <div class="btnNextQuestion text-center">                 
-                <button type="button" class="nextQuestionButton rounded-pill" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
-                aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>
-                </div>`)
-=======
             $(`#${questionId}`).append(`
                     <div class="btnNextQuestion text-center">                 
                     <button type="button" class="nextQuestionButton" data-bs-target="#questionsCarousel-${categoryId}" data-bs-slide-to="${questionNumber + 1}"
                     aria-current="true" aria-label="Slide 1"><img src="assets/images/ShamrockButtonBg.png" alt="Shamrock">Next</button>
                     </div>`);
->>>>>>> 0f4ed2d (final answer now showing the correct answer on quiz slides)
     }
     let remainingAnswers = $(`#${questionId}`).children(".answer")
     for (i = 0; i < remainingAnswers.length; i++) {
