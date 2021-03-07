@@ -171,6 +171,10 @@ body {
     width: 50rem;
     padding-bottom: 1rem;
 }
+
+.carousel-inner h3 {
+    font-size: 1.25rem;
+}
 /* */
 #questionsCarousel-a {
     background-color: #008000;
@@ -254,7 +258,7 @@ body {
 
 .answer {
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     padding-bottom: 5px;
     text-align: center;
@@ -276,6 +280,8 @@ body {
 .questionCarousel h2{
     color: #008000;
     text-shadow: 1px 1px 2px #ffa500;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .carousel h3 span{
