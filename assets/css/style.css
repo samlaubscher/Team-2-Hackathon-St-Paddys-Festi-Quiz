@@ -224,6 +224,15 @@ body {
     font-size: 1.5rem;
 }
 
+.modal-footer i {
+    line-height: inherit;
+    margin-right: 5px;
+}
+
+.modal-footer a:last-child{
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
 
 /********************************* CENTERING THE nextQuestionButton *********************************/
 

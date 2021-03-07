@@ -4,10 +4,10 @@ function getResult(){
     score = score*5
 
     if (score >= 80){
-        $("#results-3-head").append(`${score}%`)
+        $("#results-3-head").append(`${score}%!`)
         $("#results-3").modal('show')
     } else if (score <= 30){
-        $("#results-1-head").append(`${score}%`)
+        $("#results-1-head").append(`${score}%...`)
         $("#results-1").modal('show') 
     } else {
         $("#results-2-head").append(`${score}%`)
