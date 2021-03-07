@@ -1,5 +1,6 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)![Guinn-ius logo](assets/images/guinn-ius-1.png)
+![Guinn-ius logo](https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/assets/images/logoReadme.png)
 
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/samlaubscher/Hackathon-St-Paddys-Festi-Quiz)
