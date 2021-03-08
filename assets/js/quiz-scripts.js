@@ -110,10 +110,26 @@ function onClick(event){
     validateAnswer(element, nextQuestion)
 }
 
+function validatePlayerName(){ 
+    let player = $("#name-input").val() 
+    if (player.length < 3){ 
+        $("#enter-name-btn").attr("disabled", true) 
+        $("#error").removeClass("valid").html("<i class='fas fa-exclamation'></i> 3 charaters minimum") 
+    } else if (player.length > 8){
+        $("#enter-name-btn").attr("disabled", true) 
+        $("#error").removeClass("valid").html("<i class='fas fa-exclamation'></i> name too long") 
+    } else {
+        $("#enter-name-btn").attr("disabled", false)
+        $("#error").addClass("valid").html("That's Grand") 
+    }
+}
+
 // Adds the onclick events
 $(document).ready(function() {
     let answers = document.getElementsByClassName("answer")
     for (i = 0; i < answers.length; i++) {
     answers[i].addEventListener("click", onClick)
     }
+    let nameInput = document.getElementById("name-input")
+    nameInput.addEventListener("keyup", validatePlayerName)
 });

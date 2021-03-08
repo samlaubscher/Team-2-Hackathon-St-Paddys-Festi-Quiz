@@ -89,7 +89,18 @@ body {
     color: #ffffff;
     font-weight: bolder;
 }
-    
+/********************************* Star Quiz *********************************/
+form > div {
+    min-height: 24px;
+}  
+
+#error {
+    color: #fe5a5a;
+}
+
+#error.valid {
+    color: #008000;
+}
 
 /********************************* QUESTIONS *********************************/
 .carousel{
