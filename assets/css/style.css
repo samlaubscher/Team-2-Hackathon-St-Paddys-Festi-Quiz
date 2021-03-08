@@ -91,6 +91,9 @@ body {
 }
 /********************************* Start Quiz *********************************/
 
+section {
+    display: none;
+}
 #enter-name-container {
     min-height: 188px;
 }
