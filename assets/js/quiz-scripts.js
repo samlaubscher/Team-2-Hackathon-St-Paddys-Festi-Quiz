@@ -110,10 +110,46 @@ function onClick(event){
     validateAnswer(element, nextQuestion)
 }
 
+function validatePlayerName(){ 
+    let player = $("#name-input").val() 
+    if (player.length < 3){ 
+        $("#enter-name-btn").prop("disabled", true) 
+        $("#error").removeClass("valid").html("<i class='fas fa-exclamation'></i> 3 charaters minimum") 
+    } else if (player.length > 8){
+        $("#enter-name-btn").prop('disabled', true)
+        $("#error").removeClass("valid").html("<i class='fas fa-exclamation'></i> name too long") 
+    } else {
+        $("#enter-name-btn").prop("disabled", false)
+        $("#error").addClass("valid").html("That's Grand") 
+    }
+};
+
+function startQuiz(){
+
+    let player = $("#name-input").val()
+
+    sessionStorage.clear()
+    sessionStorage.setItem("score", 0)
+    sessionStorage.setItem("player", player)
+
+    $("#enter-name-container").html(`<h3 class="my-5">Good Luck <br> ${player}</h3>`)
+    let quizSections = document.getElementsByTagName("section")
+    for (i = 0; i < quizSections.length; i++) {
+    quizSections[i].style.display = "block"
+    }
+    $("#questionsCarousel-a").get(0).scrollIntoView(false)
+
+};
+
 // Adds the onclick events
 $(document).ready(function() {
     let answers = document.getElementsByClassName("answer")
     for (i = 0; i < answers.length; i++) {
     answers[i].addEventListener("click", onClick)
     }
+    let nameInput = document.getElementById("name-input")
+    nameInput.addEventListener("keyup", validatePlayerName)
+    let startButton = document.getElementById("enter-name-btn")
+    startButton.addEventListener("click", startQuiz)
+
 });

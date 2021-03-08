@@ -39,7 +39,8 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quiz</a>
+                        <a class="nav-link"
+                            href="https://github.com/samlaubscher/Team-2-Hackathon-St-Paddys-Festi-Quiz">Repo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Leaderboard</a>
@@ -71,14 +72,19 @@
 
     <main>
         <div class="container-fluid">
-            <div id="enter-name-container">
+            <div>
                 <div class="row">
-                    <div class="col-12 col-md-4 offset-md-4 text-center my-5 bg-light">
+                    <div id="enter-name-container" class="col-12 col-md-4 offset-md-4 text-center my-5 bg-light">
                         <!-- This will be centered and visible for first time visitors, then hidden when name is entered and main-landing-content will be visible -->
                         <form class="p-4" action="">
                             <p>Your Name:</p>
                             <input id="name-input" type="text">
-                            <br>
+                          
+                            <div>
+                                <span id="error">
+
+                                </span>
+                            </div>
                             <button id="enter-name-btn" class="nextQuestionButton rounded-pill mt-2">
                                 <img src="assets/images/goldpot.png" alt="Gold-Pot"> Start</button>
                             <!--<a href="https://iconscout.com/icons/gold-pot" target="_blank">Gold Pot Icon</a> by <a href="https://iconscout.com/contributors/bzzricon" target="_blank">
@@ -113,7 +119,8 @@
 
     <section id="round-1">
         <!-- Section 1 Quiz -->
-        <div id="questionsCarousel-a" class="carousel slide questionCarousel section1" data-bs-ride="carousel" data-bs-interval="false">
+        <div id="questionsCarousel-a" class="carousel slide questionCarousel section1" data-bs-ride="carousel"
+            data-bs-interval="false">
             <div class="carousel-inner">
                 <h2>Round 1: History</h2>
                 <div class="carousel-item active">
@@ -178,7 +185,8 @@
     </section>
     <section id="round-2">
         <!-- Section 2 Quiz -->
-        <div id="questionsCarousel-b" class="carousel slide questionCarousel section2" data-bs-ride="carousel" data-bs-interval="false">
+        <div id="questionsCarousel-b" class="carousel slide questionCarousel section2" data-bs-ride="carousel"
+            data-bs-interval="false">
             <div class="carousel-inner">
                 <h2>Round 2: In Ireland, America, or both</h2>
                 <div class="carousel-item active">
@@ -239,7 +247,8 @@
     </section>
     <section id="round-3">
         <!-- Section 3 Quiz -->
-        <div id="questionsCarousel-c" class="carousel slide questionCarousel section3" data-bs-ride="carousel" data-bs-interval="false">
+        <div id="questionsCarousel-c" class="carousel slide questionCarousel section3" data-bs-ride="carousel"
+            data-bs-interval="false">
             <div class="carousel-inner">
                 <h2>Round 3: Irish Drinking Culture</h2>
                 <div class="carousel-item active">
@@ -306,7 +315,8 @@
 
     <section id="round-4">
         <!-- Section 4 Quiz -->
-        <div id="questionsCarousel-d" class="carousel slide questionCarousel" data-bs-ride="carousel" data-bs-interval="false">
+        <div id="questionsCarousel-d" class="carousel slide questionCarousel" data-bs-ride="carousel"
+            data-bs-interval="false">
             <div class="carousel-inner">
                 <h2>Round 4: Irish Slang</h2>
                 <div class="carousel-item active">
@@ -450,8 +460,10 @@
                         </div>
                     </div>
                     <div class="modal-footer d-flex justify-content-between">
-                        <a href="#" class="btn btn-success d-flex">Leaderboard</a>
-                        <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/" class="btn btn-secondary d-flex"><i class="fas fa-redo"></i> Retry</a>
+                        <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/"
+                            class="btn btn-success d-flex"><i class="fas fa-redo"></i> Retry</a>
+                        <button type="button" class="btn btn-warning d-flex" data-bs-dismiss="modal"
+                            aria-label="close">Close</button>
                     </div>
                 </div>
             </div>
@@ -479,10 +491,12 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                        <a href="#" class="btn btn-success d-flex">Leaderboard</a>
-                        <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/" class="btn btn-secondary d-flex"><i class="fas fa-redo"></i> Retry</a>
-                    </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/"
+                                class="btn btn-success d-flex"><i class="fas fa-redo"></i> Retry</a>
+                            <button type="button" class="btn btn-warning d-flex" data-bs-dismiss="modal"
+                                aria-label="close">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -510,10 +524,12 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                        <a href="#" class="btn btn-success d-flex">Leaderboard</a>
-                        <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/" class="btn btn-secondary d-flex"><i class="fas fa-redo"></i> Retry</a>
-                    </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <a href="https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/"
+                                class="btn btn-success d-flex"><i class="fas fa-redo"></i> Retry</a>
+                            <button type="button" class="btn btn-warning d-flex" data-bs-dismiss="modal"
+                                aria-label="close">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>

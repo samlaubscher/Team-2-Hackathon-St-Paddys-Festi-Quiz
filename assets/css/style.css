@@ -89,7 +89,26 @@ body {
     color: #ffffff;
     font-weight: bolder;
 }
-    
+/********************************* Start Quiz *********************************/
+
+section {
+    display: none;
+}
+#enter-name-container {
+    min-height: 188px;
+}
+
+form > div {
+    min-height: 24px;
+}  
+
+#error {
+    color: #fe5a5a;
+}
+
+#error.valid {
+    color: #008000;
+}
 
 /********************************* QUESTIONS *********************************/
 .carousel{
