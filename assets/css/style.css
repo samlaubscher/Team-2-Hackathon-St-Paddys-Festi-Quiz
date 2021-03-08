@@ -225,6 +225,22 @@ form > div {
     text-shadow: 1px 1px #ffa500;
 }
 
+section p.answer.disabled:hover, 
+#questionsCarousel-c .answer.disabled:hover,
+#questionsCarousel-a .answer.disabled:hover {
+    background-color: initial;
+    font-weight: 500;
+    cursor: default;
+}
+
+#questionsCarousel-c .answer.disabled:hover,
+#questionsCarousel-a .answer.disabled:hover{
+    color: #ffffff;
+}
+section p.answer.disabled:hover {
+    color: #212529;
+}
+
 .questionCarousel h2{
     color: #008000;
     text-shadow: 1px 1px 2px #ffa500;
