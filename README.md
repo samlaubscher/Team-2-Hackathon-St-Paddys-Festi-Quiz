@@ -9,7 +9,7 @@
 
 ## Team 2 many Pints! - St Paddys Day Hackathon 2021! 
 
-Test your St Paddys day knowledge in this fun mini quiz which takes you through 4 different categories before you find yourself a pot of gold at the end of the rainbow, or a spilt pint! 
+Can you taste the difference between an Irish coffee and a macchiato ? Did you go to Tayto Park before even hearing about Disney? Our team has created an interactive Quiz to separate the three-leaf clovers from the four. Have a craic trying to win a (virtual) guinness and challenge your mates to see who's really Irish and who's just Irish-American...
 
 #### PLEASE NOTE: You must be drunk to compete in this quiz!
 
