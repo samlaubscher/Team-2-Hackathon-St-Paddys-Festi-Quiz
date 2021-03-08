@@ -90,6 +90,19 @@ body {
     font-weight: bolder;
 }
 /********************************* Start Quiz *********************************/
+#start-quiz-section {
+    background-color: #FFF1D6;
+}
+
+#enter-name-container {
+    border: 2px solid #4CAF50;
+}
+
+/*@media (max-width: 750px){
+    #enter-name-container {
+        width: 50%;
+    }
+}*/
 
 section {
     display: none;
