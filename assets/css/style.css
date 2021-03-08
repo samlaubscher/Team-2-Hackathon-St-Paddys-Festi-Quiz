@@ -89,7 +89,12 @@ body {
     color: #ffffff;
     font-weight: bolder;
 }
-/********************************* Star Quiz *********************************/
+/********************************* Start Quiz *********************************/
+
+#enter-name-container {
+    min-height: 188px;
+}
+
 form > div {
     min-height: 24px;
 }  
