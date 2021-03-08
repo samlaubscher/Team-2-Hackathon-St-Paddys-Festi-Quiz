@@ -128,7 +128,7 @@ section {
 }
 
 form > div {
-    min-height: 24px;
+    min-height: 3rem;
 }  
 
 #error {
@@ -346,6 +346,11 @@ form > div {
 .footer-details .info{
     background-color: #008000;
     color: #ffffff;
+    padding: 1.7rem;
+}
+
+.footer-details .smlogo{
+     padding: 1.7rem;
 }
 
 .footer-details p{
@@ -381,6 +386,7 @@ form > div {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
+    padding: 1.7rem;
 }
 
 .footer-details a:link,
