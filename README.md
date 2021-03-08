@@ -26,5 +26,29 @@ Test your St Paddys day knowledge in this fun mini quiz which takes you through 
 ##### Yuriy Kovalchuk
 
 ### Wireframes
-
 Wireframes for the project can be found [here](assets/wireframes/wireframes.pdf)
+
+### Color Scheme
+##### ![Color Scheme](assets/images/colorScheme.png)
+[Color Scheme link Here](https://coolors.co/008000-ffffff-ffa500-d6ffd6-f5f5f5-fff1d6)
+
+### Icons
+![Golden Pot](assets/images/goldpot.png) 
+<a href="https://iconscout.com/icons/gold-pot" target="_blank">Gold Pot Icon</a> by <a href="https://iconscout.com/contributors/bzzricon" target="_blank"> BZZRICON Studio </a> on <a href="https://iconscout.com">Iconscout
+
+![Shamrock](assets/images/ShamrockButtonBg.png)
+<a href="https://iconscout.com/icons/clover" target="_blank">Clover Icon</a> by <a href="https://iconscout.com/contributors/bacontaco">
+                        Jesus C. Romero</a> on <a href="https://iconscout.com">Iconscout</a>
+
+
+### Credits
+ - [CodeInstitue](https://codeinstitute.net/)
+ - [Fontawesome](https://fontawesome.com/)
+ - [Coolors](https://coolors.co/)
+ - [StackOverflow](https://stackoverflow.com/)
+ - [w3Schools](https://www.w3schools.com/)
+ - [Bootstrap](https://getbootstrap.com/)
+ - [Gitpod](https://gitpod.io/)
+ - [GitHub](https://github.com/)
+ - [IconStout](https://iconscout.com/)
+ - [Hiclipart](https://www.hiclipart.com/)
