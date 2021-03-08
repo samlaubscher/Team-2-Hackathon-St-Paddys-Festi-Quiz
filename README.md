@@ -1,3 +1,5 @@
+<div align="center">
+
 ![Guinn-ius logo](https://samlaubscher.github.io/Team-2-Hackathon-St-Paddys-Festi-Quiz/assets/images/logoReadme.png)
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)              
 
@@ -9,7 +11,11 @@
 
 Test your St Paddys day knowledge in this fun mini quiz which takes you through 4 different categories before you find yourself a pot of gold at the end of the rainbow, or a spilt pint! 
 
-#### PLEASE NOTE: You must be drunk to compete in this quiz! 
+#### PLEASE NOTE: You must be drunk to compete in this quiz!
+
+---
+
+</div>
 
 ### Team Members:
 ##### Bruno Dias
